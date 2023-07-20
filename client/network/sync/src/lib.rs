@@ -2687,6 +2687,8 @@ where
 
 			has_error |= result.is_err();
 
+			println!("THIS IS RESSSSUUUUUUKLLLLLTTT: {:?}", result);
+
 			match result {
 				Ok(BlockImportStatus::ImportedKnown(number, who)) =>
 					if let Some(peer) = who {
